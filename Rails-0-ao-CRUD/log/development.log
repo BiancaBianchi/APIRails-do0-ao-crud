@@ -339,3 +339,117 @@ Processing by HomeController#welcome as HTML
 Completed 200 OK in 290ms (Views: 270.0ms | ActiveRecord: 1.3ms | Allocations: 44971)
 
 
+Started GET "/" for 127.0.0.1 at 2022-02-02 01:24:06 -0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:4
+  Rendered home/welcome.html.erb within layouts/application (Duration: 18.6ms | Allocations: 5590)
+  Rendered layout layouts/application.html.erb (Duration: 140.8ms | Allocations: 39194)
+Completed 200 OK in 163ms (Views: 144.1ms | ActiveRecord: 2.1ms | Allocations: 45002)
+
+
+Started GET "/new" for 127.0.0.1 at 2022-02-02 01:24:10 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/tasks/new" for 127.0.0.1 at 2022-02-02 01:24:19 -0300
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 12.3ms | Allocations: 2053)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 4169)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 5045)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2022-02-02 01:28:01 -0300
+  
+SyntaxError (/home/biabianchi/Desktop/Ruby-Rails-Estudos/Rails-0-ao-CRUD/app/controllers/tasks_controller.rb:6: syntax error, unexpected '.', expecting ')'
+...(params.require(:task).permit(.description,
+...                              ^
+/home/biabianchi/Desktop/Ruby-Rails-Estudos/Rails-0-ao-CRUD/app/controllers/tasks_controller.rb:7: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+      :status))
+             ^
+):
+  
+app/controllers/tasks_controller.rb:6: syntax error, unexpected '.', expecting ')'
+app/controllers/tasks_controller.rb:7: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/controllers/tasks_controller.rb:6: syntax error, unexpected '.', expecting ')'
+app/controllers/tasks_controller.rb:7: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/controllers/tasks_controller.rb:6: syntax error, unexpected '.', expecting ')'
+app/controllers/tasks_controller.rb:7: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+Started GET "/tasks/new" for 127.0.0.1 at 2022-02-02 01:28:08 -0300
+  
+SyntaxError (/home/biabianchi/Desktop/Ruby-Rails-Estudos/Rails-0-ao-CRUD/app/controllers/tasks_controller.rb:6: syntax error, unexpected '.', expecting ')'
+...(params.require(:task).permit(.description,
+...                              ^
+/home/biabianchi/Desktop/Ruby-Rails-Estudos/Rails-0-ao-CRUD/app/controllers/tasks_controller.rb:7: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+      :status))
+             ^
+):
+  
+app/controllers/tasks_controller.rb:6: syntax error, unexpected '.', expecting ')'
+app/controllers/tasks_controller.rb:7: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/controllers/tasks_controller.rb:6: syntax error, unexpected '.', expecting ')'
+app/controllers/tasks_controller.rb:7: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/controllers/tasks_controller.rb:6: syntax error, unexpected '.', expecting ')'
+app/controllers/tasks_controller.rb:7: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+Started GET "/tasks/new" for 127.0.0.1 at 2022-02-02 01:28:17 -0300
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tasks/new.html.erb:1
+  Rendered tasks/new.html.erb within layouts/application (Duration: 18.3ms | Allocations: 3184)
+  Rendered layout layouts/application.html.erb (Duration: 43.5ms | Allocations: 16517)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 1.5ms | Allocations: 17290)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2022-02-02 01:28:22 -0300
+Processing by TasksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"description"=>"teste", "status"=>"1"}, "commit"=>"Criar"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1362)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/tasks_controller.rb:8:in `create'
+Started GET "/tasks/new" for 127.0.0.1 at 2022-02-02 01:28:51 -0300
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tasks/new.html.erb:1
+  Rendered tasks/new.html.erb within layouts/application (Duration: 17.8ms | Allocations: 3126)
+  Rendered layout layouts/application.html.erb (Duration: 46.3ms | Allocations: 16455)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 2.3ms | Allocations: 17227)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2022-02-02 01:28:53 -0300
+Processing by TasksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"description"=>"teste", "status"=>"1"}, "commit"=>"Criar"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:8:in `create'
+  [1m[36mTask Create (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("description", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "teste"], ["status", 1], ["created_at", "2022-02-02 04:28:53.137111"], ["updated_at", "2022-02-02 04:28:53.137111"]]
+  ↳ app/controllers/tasks_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (17.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (ActiveRecord: 18.2ms | Allocations: 3204)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-02 01:28:53 -0300
+Processing by HomeController#welcome as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:4
+  Rendered home/welcome.html.erb within layouts/application (Duration: 3.0ms | Allocations: 622)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2957)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.3ms | Allocations: 3820)
+
+
