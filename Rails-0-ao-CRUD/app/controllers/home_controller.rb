@@ -1,7 +1,7 @@
 class HomeController < ApplicationController 
   def welcome
     @tasks = []
-    @tasks << Task.new("Comprar pão")
-    @tasks << Task.new("Comprar Leite")
+    @tasks << Task.new(description: "Comprar pão")
+    @tasks << Task.new(description: "Comprar Leite")
   end
 end
