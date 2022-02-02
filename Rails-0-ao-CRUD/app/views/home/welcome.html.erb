@@ -1,3 +1,6 @@
 <h1>Boas vindas a Task List!</h1>
-<p>Isto é uma página</p>
-<em>Criada em <%= Date.today %></em>
+<p>Sua lista de tarefas:</p>
+
+<% @tasks.each do |task| %>
+  <%= task.description %>
+<% end %>

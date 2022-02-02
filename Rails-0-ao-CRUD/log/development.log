@@ -106,3 +106,163 @@ Processing by HomeController#welcome as HTML
 Completed 200 OK in 579ms (Views: 577.1ms | Allocations: 92477)
 
 
+Started GET "/" for 127.0.0.1 at 2022-02-02 01:06:15 -0300
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#welcome as HTML
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 4613)
+
+
+  
+NameError (uninitialized constant HomeController::Task
+Did you mean?  Tasks):
+  
+app/controllers/home_controller.rb:4:in `welcome'
+Started GET "/" for 127.0.0.1 at 2022-02-02 01:06:20 -0300
+Processing by HomeController#welcome as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2205)
+
+
+  
+NameError (uninitialized constant HomeController::Task
+Did you mean?  Tasks):
+  
+app/controllers/home_controller.rb:4:in `welcome'
+Started GET "/" for 127.0.0.1 at 2022-02-02 01:08:35 -0300
+Processing by HomeController#welcome as HTML
+Completed 500 Internal Server Error in 6ms (Allocations: 2185)
+
+
+  
+NameError (uninitialized constant HomeController::Task
+Did you mean?  Tasks):
+  
+app/controllers/home_controller.rb:4:in `welcome'
+Started GET "/" for 127.0.0.1 at 2022-02-02 01:08:36 -0300
+Processing by HomeController#welcome as HTML
+Completed 500 Internal Server Error in 7ms (Allocations: 2201)
+
+
+  
+NameError (uninitialized constant HomeController::Task
+Did you mean?  Tasks):
+  
+app/controllers/home_controller.rb:4:in `welcome'
+Started GET "/" for 127.0.0.1 at 2022-02-02 01:08:38 -0300
+Processing by HomeController#welcome as HTML
+Completed 500 Internal Server Error in 6ms (Allocations: 2203)
+
+
+  
+NameError (uninitialized constant HomeController::Task
+Did you mean?  Tasks):
+  
+app/controllers/home_controller.rb:4:in `welcome'
+Started GET "/" for 127.0.0.1 at 2022-02-02 01:09:23 -0300
+Processing by HomeController#welcome as HTML
+Completed 500 Internal Server Error in 5ms (Allocations: 2201)
+
+
+  
+NameError (uninitialized constant HomeController::Task
+Did you mean?  Tasks):
+  
+app/controllers/home_controller.rb:4:in `welcome'
+Started GET "/" for 127.0.0.1 at 2022-02-02 01:09:24 -0300
+Processing by HomeController#welcome as HTML
+Completed 500 Internal Server Error in 6ms (Allocations: 2203)
+
+
+  
+NameError (uninitialized constant HomeController::Task
+Did you mean?  Tasks):
+  
+app/controllers/home_controller.rb:4:in `welcome'
+Started GET "/" for 127.0.0.1 at 2022-02-02 01:10:39 -0300
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 12.1ms | Allocations: 4220)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4299)
+Completed 500 Internal Server Error in 18ms (Allocations: 5463)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tasks' for #<ActionView::Base:0x00000000012e30>
+Did you mean?  @tasks):
+    1: <h1>Boas vindas a Task List!</h1>
+    2: <p>Sua lista de tarefas:</p>
+    3: 
+    4: <% tasks.each do |task| %>
+    5:   <%= tasks.description %>
+    6: <% end %>
+  
+app/views/home/welcome.html.erb:4
+Started GET "/" for 127.0.0.1 at 2022-02-02 01:10:44 -0300
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 16.1ms | Allocations: 4079)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 4157)
+Completed 500 Internal Server Error in 19ms (Allocations: 4446)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tasks' for #<ActionView::Base:0x00000000013128>
+Did you mean?  @tasks):
+    1: <h1>Boas vindas a Task List!</h1>
+    2: <p>Sua lista de tarefas:</p>
+    3: 
+    4: <% tasks.each do |task| %>
+    5:   <%= tasks.description %>
+    6: <% end %>
+  
+app/views/home/welcome.html.erb:4
+Started GET "/" for 127.0.0.1 at 2022-02-02 01:11:07 -0300
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 16.0ms | Allocations: 4247)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 4326)
+Completed 500 Internal Server Error in 21ms (Allocations: 5313)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tasks' for #<ActionView::Base:0x00000000013448>
+Did you mean?  @tasks):
+    1: <h1>Boas vindas a Task List!</h1>
+    2: <p>Sua lista de tarefas:</p>
+    3: 
+    4: <% tasks.each do |task| %>
+    5:   <%= task.description %>
+    6: <% end %>
+  
+app/views/home/welcome.html.erb:4
+Started GET "/" for 127.0.0.1 at 2022-02-02 01:11:19 -0300
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 14.3ms | Allocations: 4079)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 4157)
+Completed 500 Internal Server Error in 18ms (Allocations: 4447)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tasks' for #<ActionView::Base:0x00000000013718>
+Did you mean?  @tasks):
+    1: <h1>Boas vindas a Task List!</h1>
+    2: <p>Sua lista de tarefas:</p>
+    3: 
+    4: <% tasks.each do |task| %>
+    5:   <%= task.description %>
+    6: <% end %>
+  
+app/views/home/welcome.html.erb:4
+Started GET "/" for 127.0.0.1 at 2022-02-02 01:11:35 -0300
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 1.8ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 125.3ms | Allocations: 33592)
+Completed 200 OK in 131ms (Views: 129.0ms | Allocations: 34641)
+
+
