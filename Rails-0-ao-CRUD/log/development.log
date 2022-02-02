@@ -1,0 +1,108 @@
+Started GET "/" for 127.0.0.1 at 2022-02-02 00:25:28 -0300
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/biabianchi/.rvm/gems/ruby-3.0.0/gems/railties-7.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/biabianchi/.rvm/gems/ruby-3.0.0/gems/railties-7.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.2ms | Allocations: 718)
+Completed 200 OK in 51ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 6932)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-02 00:28:36 -0300
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/biabianchi/.rvm/gems/ruby-3.0.0/gems/railties-7.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/biabianchi/.rvm/gems/ruby-3.0.0/gems/railties-7.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.1ms | Allocations: 614)
+Completed 200 OK in 21ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 5670)
+
+
+Started GET "/ola" for 127.0.0.1 at 2022-02-02 00:28:39 -0300
+  
+ActionController::RoutingError (uninitialized constant HomeController
+Did you mean?  HomeControler):
+  
+Started GET "/ola" for 127.0.0.1 at 2022-02-02 00:28:54 -0300
+  
+ActionController::RoutingError (uninitialized constant HomeController
+Did you mean?  HomeControler):
+  
+Started GET "/ola" for 127.0.0.1 at 2022-02-02 00:28:56 -0300
+  
+ActionController::RoutingError (uninitialized constant HomeController
+Did you mean?  HomeControler):
+  
+Started GET "/ola" for 127.0.0.1 at 2022-02-02 00:29:36 -0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (uninitialized constant HomeController
+Did you mean?  HomeControler):
+  
+Started GET "/ola" for 127.0.0.1 at 2022-02-02 00:30:53 -0300
+Processing by HomeController#welcome as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 12ms (Views: 3.9ms | Allocations: 3343)
+
+
+Started GET "/ola" for 127.0.0.1 at 2022-02-02 00:33:14 -0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#welcome as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 8)
+Completed 200 OK in 16ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 4105)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-02 00:33:19 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/biabianchi/.rvm/gems/ruby-3.0.0/gems/railties-7.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/biabianchi/.rvm/gems/ruby-3.0.0/gems/railties-7.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.9ms | Allocations: 608)
+Completed 200 OK in 10ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2437)
+
+
+Started GET "/ola" for 127.0.0.1 at 2022-02-02 00:33:27 -0300
+Processing by HomeController#welcome as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 3)
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 682)
+
+
+Started GET "/ola" for 127.0.0.1 at 2022-02-02 00:34:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/ola"):
+  
+Started GET "/ola" for 127.0.0.1 at 2022-02-02 00:34:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/ola"):
+  
+Started GET "/ola" for 127.0.0.1 at 2022-02-02 00:35:24 -0300
+  
+NoMethodError (undefined method `to' for #<ActionDispatch::Routing::Mapper:0x00007fa4e40bc850 @set=#<ActionDispatch::Routing::RouteSet:0x0000558d0a1412d8>, @draw_paths=[#<Pathname:/home/biabianchi/Desktop/Ruby-Rails-Estudos/Rails-0-ao-CRUD/task_list/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00007fa4e40bc800 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x0000558d0a676e38 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/ola" for 127.0.0.1 at 2022-02-02 00:35:35 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/ola"):
+  
+Started GET "/ola" for 127.0.0.1 at 2022-02-02 00:35:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/ola"):
+  
+Started GET "/ola" for 127.0.0.1 at 2022-02-02 00:35:37 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/ola"):
+  
+Started GET "/" for 127.0.0.1 at 2022-02-02 00:35:45 -0300
+Processing by HomeController#welcome as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 4ms (Views: 2.8ms | Allocations: 689)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-02 00:46:49 -0300
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 7.9ms | Allocations: 151)
+  Rendered layout layouts/application.html.erb (Duration: 572.7ms | Allocations: 91486)
+Completed 200 OK in 579ms (Views: 577.1ms | Allocations: 92477)
+
+
